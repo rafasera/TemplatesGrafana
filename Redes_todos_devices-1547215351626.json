@@ -1,0 +1,1802 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "Displays metrics collected by the host Zabbix Server",
+  "editable": true,
+  "gnetId": 2711,
+  "graphTooltip": 0,
+  "id": 3,
+  "iteration": 1547213638341,
+  "links": [
+    {
+      "icon": "external link",
+      "tags": [],
+      "targetBlank": true,
+      "title": "Zabbix",
+      "tooltip": "Zabbix",
+      "type": "link",
+      "url": "https://sm-fe01.webmonitor.global"
+    }
+  ],
+  "panels": [
+    {
+      "content": "\n\n<div style=\"width: 100%; height: 100%;\">\n<img src=\"http://ri.linx.com.br/wp-content/themes/mziq_linx/img/timeline/2015/img-linx.png\" align=\"left\"  height=\"70px\" wieght=\"50px\" /> \n<span style=\"font-size: 28px; padding-left:10px;\" >\n  <b>Corp. Redes</b></spam>\n<span style=\"font-size: 24px; color: #FFFFFF; float:right; padding-right: 20px;\"><img src=\"#\" align=\"center\"  height=\"80px\" /></span>\n\n</div>",
+      "gridPos": {
+        "h": 3,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "links": [],
+      "mode": "html",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "content": "<div style=\"padding-top:0px;\">\n\n<center><span style=\"font-size: 24px\" >\n  <b>Alarmes Ativos</b></spam></center>\n</div>",
+      "gridPos": {
+        "h": 2,
+        "w": 7,
+        "x": 0,
+        "y": 3
+      },
+      "id": 90,
+      "links": [],
+      "mode": "html",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "content": "<div style=\"padding-top:0px;\">\n\n<center><span style=\"font-size: 24px\" >\n  <b>Alarmes em Tratativa</b></spam></center>\n</div>",
+      "gridPos": {
+        "h": 2,
+        "w": 7,
+        "x": 7,
+        "y": 3
+      },
+      "id": 93,
+      "links": [],
+      "mode": "html",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "content": "<div style=\"padding-top:0px;\">\n\n<center><span style=\"font-size: 24px\" >\n  <b>Status do Link de Internet</b></spam></center>\n</div>",
+      "gridPos": {
+        "h": 2,
+        "w": 10,
+        "x": 14,
+        "y": 3
+      },
+      "height": "10px",
+      "id": 70,
+      "links": [],
+      "mode": "html",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "ackEventColor": "#0a50a1",
+      "customLastChangeFormat": false,
+      "datasources": [
+        "WebMonitorPRD"
+      ],
+      "descriptionAtNewLine": true,
+      "descriptionField": true,
+      "fontSize": "120%",
+      "gridPos": {
+        "h": 7,
+        "w": 7,
+        "x": 0,
+        "y": 5
+      },
+      "highlightBackground": true,
+      "highlightNewEvents": false,
+      "highlightNewerThan": "1h",
+      "hostField": true,
+      "hostGroups": false,
+      "hostTechNameField": false,
+      "hostsInMaintenance": false,
+      "id": 92,
+      "lastChangeFormat": "",
+      "limit": 100,
+      "links": [],
+      "markAckEvents": true,
+      "okEventColor": "rgb(56, 189, 113)",
+      "pageSize": 100,
+      "schemaVersion": 4,
+      "severityField": true,
+      "showEvents": {
+        "text": "Problems",
+        "value": 1
+      },
+      "showTags": false,
+      "showTriggers": "unacknowledged",
+      "sortTriggersBy": {
+        "text": "last change",
+        "value": "lastchange"
+      },
+      "statusField": false,
+      "targets": {
+        "0": {},
+        "Coletores Linx": {
+          "application": {
+            "filter": ""
+          },
+          "group": {
+            "filter": ""
+          },
+          "host": {
+            "filter": ""
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          }
+        },
+        "Conec_Zabbix": {
+          "application": {
+            "filter": "/.*/"
+          },
+          "group": {
+            "filter": "$Grupo"
+          },
+          "host": {
+            "filter": "/.*/"
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          }
+        },
+        "WebMonitorPRD": {
+          "application": {
+            "filter": "/.*/"
+          },
+          "group": {
+            "filter": "$Grupo"
+          },
+          "host": {
+            "filter": "/.*/"
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          }
+        }
+      },
+      "title": "",
+      "transparent": false,
+      "triggerSeverity": [
+        {
+          "color": "rgb(108, 108, 108)",
+          "priority": 0,
+          "severity": "Not classified",
+          "show": false
+        },
+        {
+          "color": "rgb(120, 158, 183)",
+          "priority": 1,
+          "severity": "Information",
+          "show": false
+        },
+        {
+          "color": "rgb(175, 180, 36)",
+          "priority": 2,
+          "severity": "Warning",
+          "show": true
+        },
+        {
+          "color": "rgb(255, 137, 30)",
+          "priority": 3,
+          "severity": "Average",
+          "show": true
+        },
+        {
+          "color": "rgb(255, 101, 72)",
+          "priority": 4,
+          "severity": "High",
+          "show": true
+        },
+        {
+          "color": "rgb(215, 0, 0)",
+          "priority": 5,
+          "severity": "Disaster",
+          "show": true
+        }
+      ],
+      "type": "alexanderzobnin-zabbix-triggers-panel"
+    },
+    {
+      "ackEventColor": "#0a50a1",
+      "columns": [
+        {
+          "text": "Current",
+          "value": "current"
+        },
+        {
+          "text": "Avg",
+          "value": "avg"
+        }
+      ],
+      "customLastChangeFormat": false,
+      "datasource": "WebMonitorPRD",
+      "datasources": [
+        "WebMonitorPRD"
+      ],
+      "descriptionAtNewLine": false,
+      "descriptionField": true,
+      "fontSize": "120%",
+      "gridPos": {
+        "h": 7,
+        "w": 7,
+        "x": 7,
+        "y": 5
+      },
+      "highlightBackground": true,
+      "highlightNewEvents": false,
+      "highlightNewerThan": "1h",
+      "hostField": true,
+      "hostGroups": false,
+      "hostTechNameField": false,
+      "hostsInMaintenance": false,
+      "id": 94,
+      "lastChangeFormat": "",
+      "limit": 100,
+      "links": [],
+      "markAckEvents": true,
+      "okEventColor": "rgb(56, 189, 113)",
+      "pageSize": 100,
+      "schemaVersion": 4,
+      "severityField": true,
+      "showEvents": {
+        "text": "Problems",
+        "value": "1"
+      },
+      "showTags": false,
+      "showTriggers": "acknowledged",
+      "sortTriggersBy": {
+        "text": "last change",
+        "value": "lastchange"
+      },
+      "statusField": false,
+      "targets": {
+        "0": {},
+        "Coletores Linx": {
+          "application": {
+            "filter": "/.*/"
+          },
+          "group": {
+            "filter": "Suporte_Grupo"
+          },
+          "host": {
+            "filter": "/.*/"
+          },
+          "tags": {
+            "filter": "INFRAESTRUCTURE:Conectividade"
+          },
+          "trigger": {
+            "filter": ""
+          }
+        },
+        "Conec_Zabbix": {
+          "application": {
+            "filter": "/.*/"
+          },
+          "group": {
+            "filter": "/Suporte_Grupo/Grupo-Soma.*/"
+          },
+          "host": {
+            "filter": "/.*/"
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          }
+        },
+        "WebMonitorPRD": {
+          "application": {
+            "filter": "/.*/"
+          },
+          "group": {
+            "filter": "$Grupo"
+          },
+          "host": {
+            "filter": "/.*/"
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          }
+        }
+      },
+      "title": "",
+      "transparent": false,
+      "triggerSeverity": [
+        {
+          "color": "rgb(108, 108, 108)",
+          "priority": 0,
+          "severity": "Not classified",
+          "show": false
+        },
+        {
+          "color": "rgb(120, 158, 183)",
+          "priority": 1,
+          "severity": "Information",
+          "show": false
+        },
+        {
+          "color": "rgb(175, 180, 36)",
+          "priority": 2,
+          "severity": "Warning",
+          "show": true
+        },
+        {
+          "color": "rgb(255, 137, 30)",
+          "priority": 3,
+          "severity": "Average",
+          "show": true
+        },
+        {
+          "color": "rgb(255, 101, 72)",
+          "priority": 4,
+          "severity": "High",
+          "show": true
+        },
+        {
+          "color": "rgb(215, 0, 0)",
+          "priority": 5,
+          "severity": "Disaster",
+          "show": true
+        }
+      ],
+      "type": "alexanderzobnin-zabbix-triggers-panel"
+    },
+    {
+      "columns": [
+        {
+          "text": "Current",
+          "value": "current"
+        }
+      ],
+      "datasource": "WebMonitorPRD",
+      "description": "Status 1 = ok\nStatus 0 = Falha",
+      "fontSize": "150%",
+      "gridPos": {
+        "h": 7,
+        "w": 10,
+        "x": 14,
+        "y": 5
+      },
+      "hideTimeOverride": true,
+      "id": 106,
+      "links": [],
+      "pageSize": null,
+      "scroll": true,
+      "showHeader": true,
+      "sort": {
+        "col": 1,
+        "desc": true
+      },
+      "styles": [
+        {
+          "alias": "Status",
+          "colorMode": "row",
+          "colors": [
+            "rgb(244, 30, 9)",
+            "#e5ac0e",
+            "rgb(57, 79, 39)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 0,
+          "mappingType": 1,
+          "pattern": "Current",
+          "thresholds": [
+            "0",
+            "1"
+          ],
+          "type": "number",
+          "unit": "none"
+        },
+        {
+          "alias": "Link",
+          "colorMode": null,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "decimals": 2,
+          "pattern": "Metric",
+          "thresholds": [],
+          "type": "string",
+          "unit": "short"
+        }
+      ],
+      "targets": [
+        {
+          "application": {
+            "filter": "ICMP"
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ],
+                "name": "replaceAlias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "/(: ICMP.*)/",
+                " "
+              ],
+              "text": "replaceAlias(/(: ICMP.*)/,  )"
+            },
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ],
+                "name": "replaceAlias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "/(Kinoplex - )/",
+                " "
+              ],
+              "text": "replaceAlias(/(Kinoplex - )/,  )"
+            }
+          ],
+          "group": {
+            "filter": "$Grupo"
+          },
+          "host": {
+            "filter": "/Link/"
+          },
+          "item": {
+            "filter": "ICMP ping"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": "15m",
+      "title": "",
+      "transform": "timeseries_aggregations",
+      "transparent": false,
+      "type": "table"
+    },
+    {
+      "columns": [
+        {
+          "text": "Current",
+          "value": "current"
+        }
+      ],
+      "datasource": "WebMonitorPRD",
+      "fontSize": "150%",
+      "gridPos": {
+        "h": 10,
+        "w": 7,
+        "x": 0,
+        "y": 12
+      },
+      "hideTimeOverride": true,
+      "id": 100,
+      "links": [],
+      "pageSize": null,
+      "scroll": true,
+      "showHeader": true,
+      "sort": {
+        "col": 1,
+        "desc": true
+      },
+      "styles": [
+        {
+          "alias": "Time",
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "pattern": "Time",
+          "type": "date"
+        },
+        {
+          "alias": "",
+          "colorMode": "row",
+          "colors": [
+            "rgb(244, 30, 9)",
+            "rgb(224, 145, 6)",
+            "rgb(57, 79, 39)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "mappingType": 1,
+          "pattern": "Current",
+          "thresholds": [
+            "0",
+            "0"
+          ],
+          "type": "number",
+          "unit": "decbytes"
+        },
+        {
+          "alias": "",
+          "colorMode": null,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "decimals": 2,
+          "pattern": "/.*/",
+          "thresholds": [],
+          "type": "number",
+          "unit": "short"
+        }
+      ],
+      "targets": [
+        {
+          "application": {
+            "filter": "Interface(s)"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$Grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "/IN/"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": "15m",
+      "title": "Incoming traffic on interface - Todas as Portas",
+      "transform": "timeseries_aggregations",
+      "transparent": false,
+      "type": "table"
+    },
+    {
+      "columns": [
+        {
+          "text": "Current",
+          "value": "current"
+        }
+      ],
+      "datasource": "WebMonitorPRD",
+      "fontSize": "150%",
+      "gridPos": {
+        "h": 10,
+        "w": 7,
+        "x": 7,
+        "y": 12
+      },
+      "hideTimeOverride": true,
+      "id": 99,
+      "links": [],
+      "pageSize": null,
+      "scroll": true,
+      "showHeader": true,
+      "sort": {
+        "col": 1,
+        "desc": true
+      },
+      "styles": [
+        {
+          "alias": "Time",
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "pattern": "Time",
+          "type": "date"
+        },
+        {
+          "alias": "",
+          "colorMode": "row",
+          "colors": [
+            "rgb(244, 30, 9)",
+            "rgb(224, 145, 6)",
+            "rgb(57, 79, 39)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "mappingType": 1,
+          "pattern": "Current",
+          "thresholds": [
+            "0",
+            "0"
+          ],
+          "type": "number",
+          "unit": "decbytes"
+        },
+        {
+          "alias": "",
+          "colorMode": null,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "decimals": 2,
+          "pattern": "/.*/",
+          "thresholds": [],
+          "type": "number",
+          "unit": "short"
+        }
+      ],
+      "targets": [
+        {
+          "application": {
+            "filter": "Interface(s)"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$Grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "/Out/"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": "15m",
+      "title": "Outgoing traffic on interface - Todas as Portas",
+      "transform": "timeseries_aggregations",
+      "transparent": false,
+      "type": "table"
+    },
+    {
+      "content": "<div style=\"padding-top:0px;\">\n\n<center><span style=\"font-size: 24px\" >\n  <b>Métricas Device - Últimas 6 horas</b></spam></center>\n</div>",
+      "gridPos": {
+        "h": 2,
+        "w": 10,
+        "x": 14,
+        "y": 12
+      },
+      "height": "10px",
+      "id": 107,
+      "links": [],
+      "mode": "html",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "aliasColors": {
+        "Processor load (1 min average per core)": "#890F02"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "WebMonitorPRD",
+      "editable": true,
+      "error": false,
+      "fill": 1,
+      "grid": {},
+      "gridPos": {
+        "h": 8,
+        "w": 10,
+        "x": 14,
+        "y": 14
+      },
+      "height": "250px",
+      "hideTimeOverride": true,
+      "id": 97,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": false,
+        "min": false,
+        "rightSide": false,
+        "show": true,
+        "sideWidth": null,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 2,
+      "links": [],
+      "minSpan": 24,
+      "nullPointMode": "connected",
+      "percentage": false,
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "Hoje",
+          "color": "rgba(237, 129, 40, 0.89)"
+        },
+        {
+          "alias": "Ontem",
+          "color": "#447ebc"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": "Interface(s)"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$Grupo"
+          },
+          "hide": false,
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "$Interface"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": "Interface(s)"
+          },
+          "functions": [],
+          "group": {
+            "filter": "/.*/"
+          },
+          "hide": true,
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Incoming traffic on interface wan2"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false
+          },
+          "refId": "B",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": "Interface(s)"
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Time",
+                "defaultParams": [
+                  "24h"
+                ],
+                "name": "timeShift",
+                "params": [
+                  {
+                    "name": "interval",
+                    "options": [
+                      "24h",
+                      "7d",
+                      "1M",
+                      "+24h",
+                      "-24h"
+                    ],
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "-24h"
+              ],
+              "text": "timeShift(-24h)"
+            }
+          ],
+          "group": {
+            "filter": "/.*/"
+          },
+          "hide": false,
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "$Interface"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false
+          },
+          "refId": "C",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": "6h",
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Gráfico de Evolução Interface - Incoming Selecionada Hoje e Ontem",
+      "tooltip": {
+        "msResolution": true,
+        "shared": true,
+        "sort": 0,
+        "value_type": "cumulative"
+      },
+      "transparent": true,
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "decbytes",
+          "label": "Uso da Interface",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": false
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "columns": [
+        {
+          "text": "Current",
+          "value": "current"
+        }
+      ],
+      "datasource": "WebMonitorPRD",
+      "fontSize": "150%",
+      "gridPos": {
+        "h": 8,
+        "w": 4,
+        "x": 0,
+        "y": 22
+      },
+      "hideTimeOverride": true,
+      "id": 109,
+      "links": [],
+      "pageSize": null,
+      "scroll": true,
+      "showHeader": true,
+      "sort": {
+        "col": 1,
+        "desc": true
+      },
+      "styles": [
+        {
+          "alias": "Time",
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "pattern": "Time",
+          "type": "date"
+        },
+        {
+          "alias": "",
+          "colorMode": "row",
+          "colors": [
+            "rgb(57, 79, 39)",
+            "rgb(224, 145, 6)",
+            "rgb(244, 30, 9)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "mappingType": 1,
+          "pattern": "Current",
+          "thresholds": [
+            "70",
+            "80"
+          ],
+          "type": "number",
+          "unit": "percent"
+        },
+        {
+          "alias": "",
+          "colorMode": null,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "decimals": 2,
+          "pattern": "/.*/",
+          "thresholds": [],
+          "type": "number",
+          "unit": "short"
+        }
+      ],
+      "targets": [
+        {
+          "application": {
+            "filter": "CPU"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$Grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "System CPU Usage"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": "15m",
+      "title": "Uso de CPU no Device Selecionado.",
+      "transform": "timeseries_aggregations",
+      "transparent": false,
+      "type": "table"
+    },
+    {
+      "columns": [
+        {
+          "text": "Current",
+          "value": "current"
+        }
+      ],
+      "datasource": "WebMonitorPRD",
+      "fontSize": "150%",
+      "gridPos": {
+        "h": 8,
+        "w": 4,
+        "x": 4,
+        "y": 22
+      },
+      "hideTimeOverride": true,
+      "id": 110,
+      "links": [],
+      "pageSize": null,
+      "scroll": true,
+      "showHeader": true,
+      "sort": {
+        "col": 1,
+        "desc": true
+      },
+      "styles": [
+        {
+          "alias": "Time",
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "pattern": "Time",
+          "type": "date"
+        },
+        {
+          "alias": "",
+          "colorMode": "row",
+          "colors": [
+            "rgb(57, 79, 39)",
+            "rgb(224, 145, 6)",
+            "rgb(244, 30, 9)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "mappingType": 1,
+          "pattern": "Current",
+          "thresholds": [
+            "70",
+            "80"
+          ],
+          "type": "number",
+          "unit": "percent"
+        },
+        {
+          "alias": "",
+          "colorMode": null,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "decimals": 2,
+          "pattern": "/.*/",
+          "thresholds": [],
+          "type": "number",
+          "unit": "short"
+        }
+      ],
+      "targets": [
+        {
+          "application": {
+            "filter": "Memory"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$Grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "System Memory Usage(%)"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": "15m",
+      "title": "Uso de Memoria no Device Selecionado.",
+      "transform": "timeseries_aggregations",
+      "transparent": false,
+      "type": "table"
+    },
+    {
+      "columns": [
+        {
+          "text": "Current",
+          "value": "current"
+        }
+      ],
+      "datasource": "WebMonitorPRD",
+      "description": "Verificado através do percentual de perda de pacotes do ICMP com o Coletor da Filial.",
+      "fontSize": "150%",
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 8,
+        "y": 22
+      },
+      "hideTimeOverride": true,
+      "id": 105,
+      "links": [],
+      "pageSize": null,
+      "scroll": true,
+      "showHeader": true,
+      "sort": {
+        "col": 1,
+        "desc": true
+      },
+      "styles": [
+        {
+          "alias": "Time",
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "pattern": "Time",
+          "type": "date"
+        },
+        {
+          "alias": "",
+          "colorMode": "row",
+          "colors": [
+            "rgb(57, 79, 39)",
+            "#e5ac0e",
+            "rgb(244, 30, 9)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "mappingType": 1,
+          "pattern": "Current",
+          "thresholds": [
+            "20",
+            "30"
+          ],
+          "type": "number",
+          "unit": "percent"
+        },
+        {
+          "alias": "",
+          "colorMode": null,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "decimals": 2,
+          "pattern": "/.*/",
+          "thresholds": [],
+          "type": "number",
+          "unit": "short"
+        }
+      ],
+      "targets": [
+        {
+          "application": {
+            "filter": "ICMP"
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ],
+                "name": "replaceAlias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "/(: ICMP.*)/",
+                " "
+              ],
+              "text": "replaceAlias(/(: ICMP.*)/,  )"
+            },
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ],
+                "name": "replaceAlias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "/(Kinoplex - )/",
+                " "
+              ],
+              "text": "replaceAlias(/(Kinoplex - )/,  )"
+            }
+          ],
+          "group": {
+            "filter": "$Grupo"
+          },
+          "host": {
+            "filter": "/Link/"
+          },
+          "item": {
+            "filter": "ICMP Perda Pacotes"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": "15m",
+      "title": "Perda de Pacotes - Link",
+      "transform": "timeseries_aggregations",
+      "transparent": false,
+      "type": "table"
+    },
+    {
+      "aliasColors": {
+        "Processor load (1 min average per core)": "#890F02"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "WebMonitorPRD",
+      "editable": true,
+      "error": false,
+      "fill": 1,
+      "grid": {},
+      "gridPos": {
+        "h": 8,
+        "w": 10,
+        "x": 14,
+        "y": 22
+      },
+      "height": "250px",
+      "hideTimeOverride": true,
+      "id": 108,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": false,
+        "min": false,
+        "rightSide": false,
+        "show": true,
+        "sideWidth": null,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 2,
+      "links": [],
+      "minSpan": 24,
+      "nullPointMode": "connected",
+      "percentage": false,
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "Hoje",
+          "color": "rgba(237, 129, 40, 0.89)"
+        },
+        {
+          "alias": "Ontem",
+          "color": "#447ebc"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": "Interface(s)"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$Grupo"
+          },
+          "hide": false,
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "$Interface2"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": "Interface(s)"
+          },
+          "functions": [],
+          "group": {
+            "filter": "/.*/"
+          },
+          "hide": true,
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Incoming traffic on interface wan2"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false
+          },
+          "refId": "B",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": "Interface(s)"
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Time",
+                "defaultParams": [
+                  "24h"
+                ],
+                "name": "timeShift",
+                "params": [
+                  {
+                    "name": "interval",
+                    "options": [
+                      "24h",
+                      "7d",
+                      "1M",
+                      "+24h",
+                      "-24h"
+                    ],
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "-24h"
+              ],
+              "text": "timeShift(-24h)"
+            }
+          ],
+          "group": {
+            "filter": "/.*/"
+          },
+          "hide": false,
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "$Interface2"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false
+          },
+          "refId": "C",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": "6h",
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Gráfico de Evolução Interface - Outgoing Selecionada Hoje e Ontem",
+      "tooltip": {
+        "msResolution": true,
+        "shared": true,
+        "sort": 0,
+        "value_type": "cumulative"
+      },
+      "transparent": true,
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "decbytes",
+          "label": "Uso da Interface",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": false
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    }
+  ],
+  "refresh": "1m",
+  "schemaVersion": 16,
+  "style": "dark",
+  "tags": [
+    "Corporativo"
+  ],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "isNone": true,
+          "selected": true,
+          "text": "None",
+          "value": ""
+        },
+        "datasource": "WebMonitorPRD",
+        "definition": "",
+        "hide": 2,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "base",
+        "options": [],
+        "query": "Suporte_Grupo/Grupo-Soma.*",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": true,
+          "text": "HG000000000038/SP/Matriz/Rede",
+          "value": "HG000000000038/SP/Matriz/Rede"
+        },
+        "hide": 0,
+        "includeAll": false,
+        "label": "Grupo",
+        "multi": true,
+        "name": "Grupo",
+        "options": [
+          {
+            "selected": false,
+            "text": "HG000000000038/AM/Manaus/Rede",
+            "value": "HG000000000038/AM/Manaus/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/MG/Belo Horizonte/Rede",
+            "value": "HG000000000038/MG/Belo Horizonte/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/MG/Uberlandia/Rede",
+            "value": "HG000000000038/MG/Uberlandia/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/PE/Recife/Rede",
+            "value": "HG000000000038/PE/Recife/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/PR/Cascavel/Rede",
+            "value": "HG000000000038/PR/Cascavel/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/RJ/Rio de Janeiro/Rede",
+            "value": "HG000000000038/RJ/Rio de Janeiro/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/RS/Porto Alegre/Rede",
+            "value": "HG000000000038/RS/Porto Alegre/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/SC/Blumenau/Rede",
+            "value": "HG000000000038/SC/Blumenau/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/SC/Florianopolis/Rede",
+            "value": "HG000000000038/SC/Florianopolis/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/SC/Joinvile/Rede",
+            "value": "HG000000000038/SC/Joinvile/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/SP/Bauru/Rede",
+            "value": "HG000000000038/SP/Bauru/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/SP/Bebedouro/Rede",
+            "value": "HG000000000038/SP/Bebedouro/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/SP/Campinas/Rede",
+            "value": "HG000000000038/SP/Campinas/Rede"
+          },
+          {
+            "selected": true,
+            "text": "HG000000000038/SP/Matriz/Rede",
+            "value": "HG000000000038/SP/Matriz/Rede"
+          },
+          {
+            "selected": false,
+            "text": "HG000000000038/SP/Pinheiros/Rede",
+            "value": "HG000000000038/SP/Pinheiros/Rede"
+          }
+        ],
+        "query": "HG000000000038/AM/Manaus/Rede, HG000000000038/MG/Belo Horizonte/Rede, HG000000000038/MG/Uberlandia/Rede, HG000000000038/PE/Recife/Rede, HG000000000038/PR/Cascavel/Rede, HG000000000038/RJ/Rio de Janeiro/Rede, HG000000000038/RS/Porto Alegre/Rede, HG000000000038/SC/Blumenau/Rede, HG000000000038/SC/Florianopolis/Rede, HG000000000038/SC/Joinvile/Rede, HG000000000038/SP/Bauru/Rede, HG000000000038/SP/Bebedouro/Rede, HG000000000038/SP/Campinas/Rede, HG000000000038/SP/Matriz/Rede, HG000000000038/SP/Pinheiros/Rede",
+        "skipUrlSync": false,
+        "type": "custom"
+      },
+      {
+        "allValue": null,
+        "current": {
+          "tags": [],
+          "text": "FW-DCM-001 - Matriz",
+          "value": [
+            "FW-DCM-001 - Matriz"
+          ]
+        },
+        "datasource": "WebMonitorPRD",
+        "definition": "",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Devices",
+        "multi": true,
+        "name": "host",
+        "options": [],
+        "query": "$Grupo.*",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "text": "Incoming HC traffic on interface port5",
+          "value": "Incoming HC traffic on interface port5"
+        },
+        "datasource": "WebMonitorPRD",
+        "definition": "$Grupo.$host.Interface(s).*",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Interface - Incoming",
+        "multi": true,
+        "name": "Interface",
+        "options": [],
+        "query": "$Grupo.$host.Interface(s).*",
+        "refresh": 1,
+        "regex": "/Incoming/",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "tags": [],
+          "text": "Outgoing HC traffic on interface port5",
+          "value": [
+            "Outgoing HC traffic on interface port5"
+          ]
+        },
+        "datasource": "WebMonitorPRD",
+        "definition": "$Grupo.$host.Interface(s).*",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Interface - Outgoing",
+        "multi": true,
+        "name": "Interface2",
+        "options": [],
+        "query": "$Grupo.$host.Interface(s).*",
+        "refresh": 1,
+        "regex": "/Outgoing/",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
+  },
+  "time": {
+    "from": "now-15m",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ],
+    "time_options": [
+      "5m",
+      "15m",
+      "1h",
+      "6h",
+      "12h",
+      "24h",
+      "2d",
+      "7d",
+      "30d"
+    ]
+  },
+  "timezone": "browser",
+  "title": "Redes_todos_devices",
+  "uid": "5BR6Ikwik",
+  "version": 14
+}
